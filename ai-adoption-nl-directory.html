@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Adoption Directory — Netherlands & Online</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#faf8f5;
+    --surface:#ffffff;
+    --border:#e6e0d6;
+    --ink:#1b2432;
+    --ink-soft:#5b6472;
+    --accent:#c1502e;
+    --accent-soft:#f3ded4;
+    --physical:#2e5c4f;
+    --physical-soft:#e1ebe6;
+    --online:#2b5a8a;
+    --online-soft:#dfe9f3;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#14181f; --surface:#1c222b; --border:#2c333d;
+      --ink:#eef0f2; --ink-soft:#a3acb8; --accent:#e8825c; --accent-soft:#3a2a24;
+      --physical:#7fbfa6; --physical-soft:#20302a; --online:#7fb1e0; --online-soft:#1e2c3a;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#14181f; --surface:#1c222b; --border:#2c333d;
+    --ink:#eef0f2; --ink-soft:#a3acb8; --accent:#e8825c; --accent-soft:#3a2a24;
+    --physical:#7fbfa6; --physical-soft:#20302a; --online:#7fb1e0; --online-soft:#1e2c3a;
+  }
+  *{box-sizing:border-box;}
+  body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;margin:0;padding:0 16px;padding-block:40px;}
+  .wrap{max-width:920px;margin:0 auto;}
+  header{margin-bottom:36px;}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;}
+  h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(28px,5vw,44px);line-height:1.08;margin:0 0 14px;text-wrap:balance;}
+  .lede{font-size:16px;color:var(--ink-soft);max-width:65ch;line-height:1.55;margin:0;}
+  .legend{display:flex;gap:20px;flex-wrap:wrap;margin-top:24px;font-size:13px;color:var(--ink-soft);}
+  .legend span{display:inline-flex;align-items:center;gap:7px;}
+  .dot{width:9px;height:9px;border-radius:50%;display:inline-block;}
+  .dot.physical{background:var(--physical);}
+  .dot.online{background:var(--online);}
+
+  section{margin-bottom:44px;}
+  .section-head{display:flex;align-items:baseline;gap:12px;border-bottom:1px solid var(--border);padding-bottom:12px;margin-bottom:20px;flex-wrap:wrap;}
+  .section-head h2{font-family:'Fraunces',serif;font-weight:600;font-size:22px;margin:0;}
+  .section-head .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.05em;text-transform:uppercase;padding:3px 9px;border-radius:99px;}
+  .tag.physical{background:var(--physical-soft);color:var(--physical);}
+  .tag.online{background:var(--online-soft);color:var(--online);}
+  .section-head .count{margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);}
+  .section-note{font-size:13.5px;color:var(--ink-soft);margin:-10px 0 20px;max-width:65ch;line-height:1.5;}
+
+  .city-group{margin-bottom:26px;}
+  .city-name{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 10px;}
+  .cards{display:grid;grid-template-columns:1fr;gap:10px;}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;}
+  .card-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;}
+  .card-name{font-weight:600;font-size:15px;}
+  .card-name a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--accent);}
+  .card-name a:hover{color:var(--accent);}
+  .card-format{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-soft);white-space:nowrap;}
+  .card-date{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent);white-space:nowrap;font-weight:500;}
+  .card-desc{font-size:13.5px;color:var(--ink-soft);line-height:1.5;margin:0;}
+
+  footer{border-top:1px solid var(--border);padding-top:18px;font-size:12.5px;color:var(--ink-soft);line-height:1.6;}
+  footer strong{color:var(--ink);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">AI Adoption Landscape — Refreshed September 2026</div>
+    <h1>Where AI adoption gets discussed, in the Netherlands and online</h1>
+    <p class="lede">Scoped to AI adoption specifically: how organizations pilot, scale and govern AI, not general machine-learning research. Physical meetups, user groups and dated 2026 events in the Netherlands, plus online communities for adoption practitioners anywhere. Details change — confirm on the linked page before you commit to a date.</p>
+    <div class="legend">
+      <span><span class="dot physical"></span>Physical — Netherlands</span>
+      <span><span class="dot online"></span>Online — global</span>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-head">
+      <h2>Recurring meetups & user groups</h2>
+      <span class="tag physical">Physical · Netherlands</span>
+      <span class="count">7 groups</span>
+    </div>
+    <p class="section-note">Ongoing groups without fixed 2026 dates yet — check each page for the next session.</p>
+
+    <div class="city-group">
+      <p class="city-name">Amsterdam</p>
+      <div class="cards">
+        <div class="card">
+          <div class="card-top"><span class="card-name"><a href="https://amsterdam.aitinkerers.org/" target="_blank" rel="noopener">AI Tinkerers Amsterdam</a></span><span class="card-format">Monthly-ish</span></div>
+          <p class="card-desc">Live demos of AI agents and workflow automation actually running in production — adoption from the builder's side.</p>
+        </div>
+        <div class="card">
+          <div class="card-top"><span class="card-name"><a href="https://www.meetup.com/mindstone-amsterdam-ai-meetup/" target="_blank" rel="noopener">Mindstone Amsterdam AI Meetup</a></span><span class="card-format">Monthly</span></div>
+          <p class="card-desc">Practical, applied AI use cases aimed at professionals bringing AI into their own workflows, not just engineers.</p>
+        </div>
+        <div class="card">
+          <div class="card-top"><span class="card-name"><a href="https://globalai.community/chapters/amsterdam/" target="_blank" rel="noopener">Global AI Amsterdam</a></span><span class="card-format">Talks / workshops</span></div>
+          <p class="card-desc">Volunteer-run chapter running adoption-focused workshops and hackathons on current AI tooling.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="city-group">
+      <p class="city-name">Utrecht</p>
+      <div class="cards">
+        <div class="card">
+          <div class="card-top"><span class="card-name"><a href="https://globalai.community/chapters/utrecht" target="_blank" rel="noopener">Global AI Utrecht</a></span><span class="card-format">Monthly</span></div>
+          <p class="card-desc">Monthly sessions spanning responsible AI and real-world application, alongside more technical ML topics.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="city-group">
+      <p class="city-name">Eindhoven</p>
+      <div class="cards">
+        <div class="card">
+          <div class="card-top"><span class="card-name"><a href="https://eindhoven.aitinkerers.org/" target="_blank" rel="noopener">AI Tinkerers Eindhoven</a></span><span class="card-format">Hands-on / demos</span></div>
+          <p class="card-desc">New chapter (since late 2025) for teams putting agents and automation into production, with live demos each session.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="city-group">
+      <p class="city-name">The Hague</p>
+      <div class="cards">
+        <div class="card">
+          <div class="card-top"><span class="card-name"><a href="https://www.meetup.com/den-haag-ai-and-society-meetup-group/" target="_blank" rel="noopener">AI Salon The Hague</a></span><span class="card-format">Networking</span></div>
+          <p class="card-desc">Networking gathering for people shaping local AI adoption, including government and legal-tech angles.</p>
+        </div>
+        <div class="card">
+          <div class="card-top"><span class="card-name"><a href="https://www.meetup.com/renewai-ai-tech-talks-den-haag/" target="_blank" rel="noopener">RenewAI Tech Talks Den Haag</a></span><span class="card-format">Talks</span></div>
+          <p class="card-desc">Talks for a broad audience on where AI is actually heading in business and technology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Upcoming 2026 events</h2>
+      <span class="tag physical">Physical · Netherlands</span>
+      <span class="count">3 dated events</span>
+    </div>
+    <p class="section-note">Confirmed dates still ahead of us, all centered on enterprise AI adoption, governance and scaling. Past 2026 editions (Dutch AI Conference in March, Dutch AI Congress in April, HumanX in September) are left off once they've happened.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-top"><span class="card-name"><a href="https://worldsummit.ai/" target="_blank" rel="noopener">World Summit AI</a></span><span class="card-date">7–8 Oct 2026 · Taets Art & Event Park, Amsterdam</span></div>
+        <p class="card-desc">10th edition, anchor of World AI Week. ~10,000 attendees across enterprise, research and startups.</p>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name"><a href="https://www.industryevents.com/events/techex-europe" target="_blank" rel="noopener">TechEx Europe</a></span><span class="card-date">19–20 Oct 2026 · RAI, Amsterdam</span></div>
+        <p class="card-desc">8,000+ technology leaders across AI, cybersecurity and digital transformation in eight co-located events.</p>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name"><a href="https://www.iamsterdam.com/en/business/calendar/events/all/the-amsterdam-ai-summit-2026" target="_blank" rel="noopener">The Amsterdam AI Summit</a></span><span class="card-date">4 Nov 2026 · Zuiderkerk, Amsterdam</span></div>
+        <p class="card-desc">Second 2026 edition (after a sold-out January run). 500 business, innovation, product and tech leaders from across the Netherlands.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Communities</h2>
+      <span class="tag online">Online · Global</span>
+      <span class="count">4 communities</span>
+    </div>
+    <p class="section-note">Adoption and production-focused — piloting, scaling and shipping AI, rather than pure ML research.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-top"><span class="card-name"><a href="https://smarterx.ai/community" target="_blank" rel="noopener">SmarterX AI Community</a></span><span class="card-format">Slack — 10,000+ members</span></div>
+        <p class="card-desc">Built specifically for business leaders piloting and scaling AI — case studies, best practices, peer troubleshooting.</p>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name">MLOps Community</span><span class="card-format">Slack — 27,900+ members</span></div>
+        <p class="card-desc">Largest practitioner group for running ML/AI in production — deployment, monitoring and the operational side of adoption.</p>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name"><a href="https://aiproducthive.com/" target="_blank" rel="noopener">AI Product Hive</a></span><span class="card-format">Slack — 1,000+ members</span></div>
+        <p class="card-desc">Product managers, designers and engineers on actually shipping AI features rather than prototyping them.</p>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-name">Build Club</span><span class="card-format">Slack + Discord + events</span></div>
+        <p class="card-desc">Active builder community for teams putting AI products into real use, spanning async chat and in-person events.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>How this was compiled:</strong> web research against Meetup.com, organizer sites and event listings, refreshed September 2026. Scope: AI adoption (piloting, scaling, governing AI in organizations) — general ML/deep-learning research groups excluded. Click through before planning around a date; venues and lineups shift.</p>
+  </footer>
+
+</div>
+</body>
+</html>
